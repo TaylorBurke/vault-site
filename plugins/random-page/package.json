@@ -1,0 +1,37 @@
+{
+  "name": "random-page",
+  "version": "1.0.0",
+  "description": "Button that jumps to a random note",
+  "type": "module",
+  "private": true,
+  "main": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js"
+    },
+    "./components": {
+      "import": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "peerDependencies": {
+    "preact": "^10.0.0"
+  },
+  "quartz": {
+    "name": "random-page",
+    "displayName": "Random Page",
+    "category": "component",
+    "version": "1.0.0",
+    "quartzVersion": ">=5.0.0",
+    "dependencies": [],
+    "defaultEnabled": true,
+    "defaultOptions": {},
+    "components": {
+      "RandomPage": {
+        "displayName": "Random Page",
+        "defaultPosition": "left",
+        "defaultPriority": 36
+      }
+    }
+  }
+}
